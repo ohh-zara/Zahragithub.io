@@ -1,0 +1,178 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Poppins'; /* Setting font family */
+  cursor: none; /* Hiding the cursor */
+  background-color: black; /* Background color */
+  color: #e0e0e0; /* Text color */
+}
+
+/* Footer styles */
+footer {
+  position: fixed; /* Fixing the footer */
+  bottom: 0; /* Positioned at the bottom */
+  padding: 2em; /* Padding */
+  justify-content: space-between; /* Spacing between items */
+  align-items: center; /* Aligning items vertically */
+  z-index: 2; /* Setting z-index */
+  display: flex; /* Flex layout */
+  border-radius: 12px; /* Border radius */
+  margin-left: 740px; /* Left margin */
+  margin-bottom: 30px; /* Bottom margin */
+  height: 60px; /* Height */
+  width: 600px; /* Width */
+  transform: translateX(-50%); /* Centering horizontally */
+  background-color: #3f3b3b4c; /* Background color */
+}
+
+/* Styles for the mouse dot */
+.mouse-dot {
+  width: 5px; /* Width */
+  height: 5px; /* Height */
+  background-color: white; /* Background color */
+}
+
+/* Styles for the mouse outline */
+.mouse-outline {
+  width: 30px; /* Width */
+  height: 30px; /* Height */
+  border: 2px solid hsla(0, 0%, 100%, 0.5); /* Border */
+}
+
+.mouse-dot,
+.mouse-outline {
+  position: fixed; /* Fixing the elements */
+  top: 0; /* Positioned at the top */
+  left: 0; /* Positioned at the left */
+  transform: translate(-50%, -50%); /* Translating */
+  border-radius: 50%; /* Border radius */
+  z-index: 1; /* Setting z-index */
+  pointer-events: none; /* Disabling pointer events */
+}
+
+/* Additional body styles */
+body {
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+  background-color: rgb(0, 0, 0); /* Background color */
+  color: #e0e0e0; /* Text color */
+}
+
+/* Main heading styles */
+#main-heading {
+  font-size: 3rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-transform: uppercase; /* Transforming text to uppercase */
+  text-align: center; /* Centering text */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Label styles for "New" and "Featured" */
+#new-label, #featured-label {
+  display: inline-block; /* Display inline-block */
+  margin: 0 10px; /* Margin */
+  padding: 5px 10px; /* Padding */
+  background-color: #ffffff; /* Background color */
+  color: #fff; /* Text color */
+  border-radius: 5px; /* Border radius */
+  font-size: 1rem; /* Font size */
+  opacity: 0; /* Initial opacity */
+}
+
+/* Navbar styles */
+.navbar {
+  position: absolute; /* Absolute positioning */
+  top: 20px; /* Positioned from top */
+  right: 20px; /* Positioned from right */
+}
+  
+/* Cart link styles */
+.cart {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Removing underline */
+  padding: 10px 20px; /* Padding */
+  background-color: #3333339a; /* Background color */
+  opacity: 40px; /* Opacity */
+  border-radius: 5px; /* Border radius */
+}
+  
+  .shoe-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    opacity: 1;
+  }
+  
+  .shoe {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(73, 72, 72, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .shoe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shoe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .shoe:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .view, .add-to-cart {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+  

@@ -1,0 +1,167 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Poppins'; /* Setting font family */
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+  background-color: #CFD7D8; /* Background color */
+  color: #e0e0e0; /* Text color */
+  cursor: none; /* Hiding the cursor */
+}
+
+/* Footer styles */
+footer {
+  position: fixed; /* Fixing the footer */
+  bottom: 0; /* Positioned at the bottom */
+  padding: 2em; /* Padding */
+  justify-content: space-between; /* Spacing between items */
+  align-items: center; /* Aligning items vertically */
+  z-index: 2; /* Setting z-index */
+  display: flex; /* Flex layout */
+  border-radius: 12px; /* Border radius */
+  margin-left: 740px; /* Left margin */
+  margin-bottom: 30px; /* Bottom margin */
+  height: 60px; /* Height */
+  width: 600px; /* Width */
+  transform: translateX(-50%); /* Centering horizontally */
+  background-color: #3f3b3b84; /* Background color */
+}
+
+/* Main heading styles */
+#main-heading {
+  font-size: 3rem; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-transform: uppercase; /* Transforming text to uppercase */
+  text-align: center; /* Centering text */
+  margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Label styles for "New" and "Featured" */
+#new-label, #featured-label {
+  display: inline-block; /* Display inline-block */
+  margin: 0 10px; /* Margin */
+  padding: 5px 10px; /* Padding */
+  background-color: #ffffff; /* Background color */
+  color: #fff; /* Text color */
+  border-radius: 5px; /* Border radius */
+  font-size: 1rem; /* Font size */
+  opacity: 0; /* Initial opacity */
+}
+
+/* Navbar styles */
+.navbar {
+  position: absolute; /* Absolute positioning */
+  top: 20px; /* Positioned from top */
+  right: 20px; /* Positioned from right */
+}
+
+/* Cart link styles */
+.cart {
+  color: #000000; /* Text color */
+  text-decoration: none; /* Removing underline */
+  padding: 10px 20px; /* Padding */
+  background-color: #a0a7a8; /* Background color */
+  opacity: 40px; /* Opacity */
+  border-radius: 5px; /* Border radius */
+}
+
+/* Shoe container styles */
+.shoe-container {
+  display: flex; /* Flex layout */
+  justify-content: space-around; /* Spacing around items */
+  align-items: center; /* Aligning items vertically */
+  flex-wrap: wrap; /* Allowing wrapping */
+  padding: 20px; /* Padding */
+  opacity: 1; /* Opacity */
+}
+
+/* Individual shoe styles */
+.shoe {
+  width: 300px; /* Width */
+  height: 300px; /* Height */
+  overflow: hidden; /* Hiding overflow */
+  position: relative; /* Relative positioning */
+  margin: 20px; /* Margin */
+  border-radius: 10px; /* Border radius */
+  box-shadow: 0 4px 6px rgba(211, 211, 212, 0.1); /* Box shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition */
+}
+
+/* Hover effect for shoes */
+.shoe:hover {
+  transform: translateY(-5px); /* Move up */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Image styles inside shoe */
+.shoe img {
+  width: 100%; /* Width */
+  height: 100%; /* Height */
+  object-fit: cover; /* Covering */
+  transition: transform 0.3s ease-in-out; /* Transition */
+}
+
+/* Overlay styles */
+.overlay {
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Positioned from top */
+  left: 0; /* Positioned from left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+  opacity: 0; /* Initial opacity */
+  transition: opacity 0.3s ease-in-out; /* Transition */
+}
+
+/* Overlay content styles */
+.overlay-content {
+  position: absolute; /* Absolute positioning */
+  top: 50%; /* Positioned from top */
+  left: 50%; /* Positioned from left */
+  transform: translate(-50%, -50%); /* Centering */
+  text-align: center; /* Centering text */
+}
+
+/* Button styles */
+.view, .add-to-cart {
+  display: inline-block; /* Display inline-block */
+  margin: 10px; /* Margin */
+  padding: 10px 20px; /* Padding */
+  color: #fff; /* Text color */
+  text-decoration: none; /* Removing underline */
+  background-color: #333; /* Background color */
+  border: none; /* No border */
+  border-radius: 5px; /* Border radius */
+  cursor: pointer; /* Cursor style */
+}
+
+/* Styles for the mouse dot */
+.mouse-dot {
+  width: 5px; /* Width */
+  height: 5px; /* Height */
+  background-color: rgb(0, 0, 0); /* Background color */
+}
+
+/* Styles for the mouse outline */
+.mouse-outline {
+  width: 30px; /* Width */
+  height: 30px; /* Height */
+  border: 2px solid hsla(0, 0%, 0%, 0.5); /* Border */
+}
+
+.mouse-dot,
+.mouse-outline {
+  position: fixed; /* Fixing the elements */
+  top: 0; /* Positioned at the top */
+  left: 0; /* Positioned at the left */
+  transform: translate(-50%, -50%); /* Translating */
+  border-radius: 50%; /* Border radius */
+  z-index: 1; /* Setting z-index */
+  pointer-events: none; /* Disabling pointer events */
+}

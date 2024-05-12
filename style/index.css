@@ -1,0 +1,276 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting global styles for the body */
+body {
+    font-family: "Poppins"; /* Setting font family */
+    cursor: none; /* Hiding the cursor */
+}
+
+/* Setting styles for images */
+img {
+    width: 100%; /* Ensuring images fill their containers */
+    height: 100%;
+    object-fit: cover; /* Scaling images to cover their containers */
+}
+
+/* Container for the entire content */
+.con {
+    position: fixed; /* Fixing the container */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: black; /* Background color */
+    overflow: hidden; /* Hiding overflow content */
+}
+
+/* Navigation bar styles */
+nav {
+    position: fixed; /* Fixing the navigation bar */
+    width: 100%; /* Full width */
+    padding: 2em; /* Padding */
+    display: flex; /* Flex layout */
+    align-items: center; /* Aligning items vertically */
+    z-index: 2; /* Setting z-index */
+}
+
+/* Paragraph styles for navigation and footer */
+nav p,
+footer p {
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 12px; /* Font size */
+}
+
+/* Styling for menu items */
+nav > div {
+    flex: 1; /* Flex layout */
+}
+
+.menu p {
+    width: max-content; /* Setting width */
+    background-color: rgba(255, 255, 255, 0.1); /* Background color */
+    border-radius: 40px; /* Border radius */
+    backdrop-filter: blur(20px); /* Applying blur effect */
+    padding: 6px 12px; /* Padding */
+}
+
+/* Logo styles */
+.logo {
+    justify-content: center; /* Centering content */
+}
+
+.logo a {
+    text-decoration: none; /* Removing underline */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 20px; /* Font size */
+    font-weight: 500; /* Font weight */
+}
+
+/* Footer styles */
+footer {
+    position: fixed; /* Fixing the footer */
+    bottom: 0; /* Positioned at the bottom */
+    width: 100%; /* Full width */
+    padding: 2em; /* Padding */
+    display: flex; /* Flex layout */
+    justify-content: space-between; /* Spacing between items */
+    align-items: center; /* Aligning items vertically */
+    z-index: 2; /* Setting z-index */
+}
+
+/* Styles for the shoes section */
+.shoes {
+    position: fixed; /* Fixing the section */
+    width: 30%; /* Width */
+    height: 100vh; /* Full height */
+    padding: 0 2em; /* Padding */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Flex direction */
+    justify-content: center; /* Centering content vertically */
+    z-index: 2; /* Setting z-index */
+}
+
+/* Styles for individual shoe items */
+.shoe {
+    margin-top: 10px; /* Top margin */
+    width: max-content; /* Width */
+    padding: 0.25em 0; /* Padding */
+    cursor: pointer; /* Cursor style */
+}
+
+.shoe a {
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 6px 12px; /* Padding */
+    font-weight: lighter; /* Font weight */
+    background: rgba(255, 255, 255, 0.1); /* Background color */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Border */
+    border-radius: 40px; /* Border radius */
+    backdrop-filter: blur(20px); /* Applying blur effect */
+    transition: 0.3s; /* Transition duration */
+    margin-top: 10px; /* Top margin */
+}
+
+/* Hover effect for shoe items */
+.shoe:hover a {
+    background: none; /* Removing background */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Changing border */
+    margin-top: 10px; /* Top margin */
+}
+
+/* Styles for the preview section */
+.preview {
+    position: fixed; /* Fixing the section */
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    z-index: 0; /* Setting z-index */
+    color: rgb(255, 255, 255); /* Text color */
+    opacity: 0; /* Setting initial opacity */
+}
+
+/* Background overlay for the preview */
+.preview-bg {
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    opacity: 0.55; /* Background opacity */
+}
+
+/* Title styles for the preview */
+.preview-title h1 {
+    font-weight: lighter; /* Font weight */
+    font-size: 80px; /* Font size */
+}
+
+/* Paragraph styles for preview tags and description */
+.preview-tags p,
+.preview-description p {
+    font-size: 14px; /* Font size */
+    line-height: 120%; /* Line height */
+}
+
+.preview.variant-1 .preview-img{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    margin: 2em;
+    width: 300px;
+    height: 400px;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.preview.variant-1 .preview-title{
+    position: absolute;
+    bottom: 23%;
+    right: 40%;
+}
+
+.preview.variant-1 .preview-tag{
+    position: absolute;
+    bottom: 25%;
+    right: 40%;
+} 
+
+.preview.variant-1 .preview-description{
+    color: black;
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    top:46%;
+}
+
+.preview.variant-2 .preview-img{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    margin: 2em;
+    width: 300px;
+    height: 400px;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.preview.variant-2 .preview-title{
+    position: absolute;
+    bottom: 52%;
+    right: 54%;
+}
+
+.preview.variant-2 .preview-tag{
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+} 
+
+.preview.variant-2 .preview-description{
+    width: 250px;
+    position: absolute;
+    right: 15%;
+    top:15%;
+}
+
+.preview.variant-3 .preview-img{
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    margin: 2em;
+    width: 300px;
+    height: 400px;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.preview.variant-3 .preview-title{
+    position: absolute;
+    bottom: 40%;
+    right: 5%;
+}
+
+.preview.variant-3 .preview-tag{
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+} 
+
+.preview.variant-3 .preview-description{
+    width: 250px;
+    position: absolute;
+    right: 20%;
+    top:15%;
+}
+
+.mouse-dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+
+.mouse-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.mouse-dot,
+.mouse-outline {
+    position: fixed; /* Fixing the elements */
+    top: 0; /* Positioned at the top */
+    left: 0; /* Positioned at the left */
+    transform: translate(-50%, -50%); /* Translating */
+    border-radius: 50%; /* Border radius */
+    z-index: 1; /* Setting z-index */
+    pointer-events: none; /* Disabling pointer events */
+}
+
+/* Additional styles for Boxes and box */
+.Boxes {
+    height: 100px; /* Height */
+    width: 100px; /* Width */
+    background-color: aliceblue; /* Background color */
+}
+
+.box {
+    height: 100px; /* Height */
+    width: 100px; /* Width */
+    background-color: black; /* Background color */
+}
