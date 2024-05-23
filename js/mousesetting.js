@@ -1,3 +1,5 @@
+
+
 // Selecting the DOM elements with the specified attributes
 const mouseDot = document.querySelector("[data-mouse-dot]"); // Dot element that follows mouse cursor
 const mouseOutLine = document.querySelector("[data-mouse-outline]"); // Outline element that follows mouse cursor
@@ -24,3 +26,5 @@ window.addEventListener("mousemove", function(e) {
         }
     );
 });
+
+

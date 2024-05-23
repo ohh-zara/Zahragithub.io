@@ -23,50 +23,8 @@ img {
     position: fixed; /* Fixing the container */
     width: 100vw; /* Full width of the viewport */
     height: 100vh; /* Full height of the viewport */
-    background-color: black; /* Background color */
+    background-color: rgb(5, 5, 5); /* Background color */
     overflow: hidden; /* Hiding overflow content */
-}
-
-/* Navigation bar styles */
-nav {
-    position: fixed; /* Fixing the navigation bar */
-    width: 100%; /* Full width */
-    padding: 2em; /* Padding */
-    display: flex; /* Flex layout */
-    align-items: center; /* Aligning items vertically */
-    z-index: 2; /* Setting z-index */
-}
-
-/* Paragraph styles for navigation and footer */
-nav p,
-footer p {
-    color: rgb(255, 255, 255); /* Text color */
-    font-size: 12px; /* Font size */
-}
-
-/* Styling for menu items */
-nav > div {
-    flex: 1; /* Flex layout */
-}
-
-.menu p {
-    width: max-content; /* Setting width */
-    background-color: rgba(255, 255, 255, 0.1); /* Background color */
-    border-radius: 40px; /* Border radius */
-    backdrop-filter: blur(20px); /* Applying blur effect */
-    padding: 6px 12px; /* Padding */
-}
-
-/* Logo styles */
-.logo {
-    justify-content: center; /* Centering content */
-}
-
-.logo a {
-    text-decoration: none; /* Removing underline */
-    color: rgb(255, 255, 255); /* Text color */
-    font-size: 20px; /* Font size */
-    font-weight: 500; /* Font weight */
 }
 
 /* Footer styles */
@@ -262,15 +220,3 @@ footer {
     pointer-events: none; /* Disabling pointer events */
 }
 
-/* Additional styles for Boxes and box */
-.Boxes {
-    height: 100px; /* Height */
-    width: 100px; /* Width */
-    background-color: aliceblue; /* Background color */
-}
-
-.box {
-    height: 100px; /* Height */
-    width: 100px; /* Width */
-    background-color: black; /* Background color */
-}

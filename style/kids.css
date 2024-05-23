@@ -8,11 +8,9 @@
 /* Body styles */
 body {
   font-family: 'Poppins'; /* Setting font family */
-  margin: 0; /* Removing default margin */
-  padding: 0; /* Removing default padding */
-  background-color: #CFD7D8; /* Background color */
-  color: #e0e0e0; /* Text color */
   cursor: none; /* Hiding the cursor */
+  background-color: rgb(230, 235, 238); /* Background color */
+  color: #e0e0e0; /* Text color */
 }
 
 /* Footer styles */
@@ -30,7 +28,40 @@ footer {
   height: 60px; /* Height */
   width: 600px; /* Width */
   transform: translateX(-50%); /* Centering horizontally */
-  background-color: #3f3b3b84; /* Background color */
+  background-color: #3f3b3b4c; /* Background color */
+}
+
+/* Styles for the mouse dot */
+.mouse-dot {
+  width: 5px; /* Width */
+  height: 5px; /* Height */
+  background-color: rgb(18, 18, 18); /* Background color */
+}
+
+/* Styles for the mouse outline */
+.mouse-outline {
+  width: 30px; /* Width */
+  height: 30px; /* Height */
+  border: 2px solid hsla(0, 0%, 4%, 0.5); /* Border */
+}
+
+.mouse-dot,
+.mouse-outline {
+  position: fixed; /* Fixing the elements */
+  top: 0; /* Positioned at the top */
+  left: 0; /* Positioned at the left */
+  transform: translate(-50%, -50%); /* Translating */
+  border-radius: 50%; /* Border radius */
+  z-index: 1; /* Setting z-index */
+  pointer-events: none; /* Disabling pointer events */
+}
+
+/* Additional body styles */
+body {
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+  background-color: #C7D5D4; /* Background color */
+  color: #e0e0e0; /* Text color */
 }
 
 /* Main heading styles */
@@ -60,108 +91,80 @@ footer {
   top: 20px; /* Positioned from top */
   right: 20px; /* Positioned from right */
 }
-
+  
 /* Cart link styles */
 .cart {
-  color: #000000; /* Text color */
+  color: #fff; /* Text color */
   text-decoration: none; /* Removing underline */
   padding: 10px 20px; /* Padding */
-  background-color: #a0a7a8; /* Background color */
+  background-color: #3333339a; /* Background color */
   opacity: 40px; /* Opacity */
   border-radius: 5px; /* Border radius */
 }
-
-/* Shoe container styles */
-.shoe-container {
-  display: flex; /* Flex layout */
-  justify-content: space-around; /* Spacing around items */
-  align-items: center; /* Aligning items vertically */
-  flex-wrap: wrap; /* Allowing wrapping */
-  padding: 20px; /* Padding */
-  opacity: 1; /* Opacity */
-}
-
-/* Individual shoe styles */
-.shoe {
-  width: 300px; /* Width */
-  height: 300px; /* Height */
-  overflow: hidden; /* Hiding overflow */
-  position: relative; /* Relative positioning */
-  margin: 20px; /* Margin */
-  border-radius: 10px; /* Border radius */
-  box-shadow: 0 4px 6px rgba(211, 211, 212, 0.1); /* Box shadow */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition */
-}
-
-/* Hover effect for shoes */
-.shoe:hover {
-  transform: translateY(-5px); /* Move up */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
-}
-
-/* Image styles inside shoe */
-.shoe img {
-  width: 100%; /* Width */
-  height: 100%; /* Height */
-  object-fit: cover; /* Covering */
-  transition: transform 0.3s ease-in-out; /* Transition */
-}
-
-/* Overlay styles */
-.overlay {
-  position: absolute; /* Absolute positioning */
-  top: 0; /* Positioned from top */
-  left: 0; /* Positioned from left */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
-  opacity: 0; /* Initial opacity */
-  transition: opacity 0.3s ease-in-out; /* Transition */
-}
-
-/* Overlay content styles */
-.overlay-content {
-  position: absolute; /* Absolute positioning */
-  top: 50%; /* Positioned from top */
-  left: 50%; /* Positioned from left */
-  transform: translate(-50%, -50%); /* Centering */
-  text-align: center; /* Centering text */
-}
-
-/* Button styles */
-.view, .add-to-cart {
-  display: inline-block; /* Display inline-block */
-  margin: 10px; /* Margin */
-  padding: 10px 20px; /* Padding */
-  color: #fff; /* Text color */
-  text-decoration: none; /* Removing underline */
-  background-color: #333; /* Background color */
-  border: none; /* No border */
-  border-radius: 5px; /* Border radius */
-  cursor: pointer; /* Cursor style */
-}
-
-/* Styles for the mouse dot */
-.mouse-dot {
-  width: 5px; /* Width */
-  height: 5px; /* Height */
-  background-color: rgb(0, 0, 0); /* Background color */
-}
-
-/* Styles for the mouse outline */
-.mouse-outline {
-  width: 30px; /* Width */
-  height: 30px; /* Height */
-  border: 2px solid hsla(0, 0%, 0%, 0.5); /* Border */
-}
-
-.mouse-dot,
-.mouse-outline {
-  position: fixed; /* Fixing the elements */
-  top: 0; /* Positioned at the top */
-  left: 0; /* Positioned at the left */
-  transform: translate(-50%, -50%); /* Translating */
-  border-radius: 50%; /* Border radius */
-  z-index: 1; /* Setting z-index */
-  pointer-events: none; /* Disabling pointer events */
-}
+  
+  .shoe-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    opacity: 1;
+  }
+  
+  .shoe {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(73, 72, 72, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .shoe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .shoe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .shoe:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .view, .add-to-cart {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

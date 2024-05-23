@@ -38,6 +38,6 @@ export const previews = [
         img: "pic/main/main-5.jpeg",
         title: "",
         tag: "kjdksdjfskdjfl",
-        description: "check out new in Mens collection."                    // Description of the section (empty in this case)
+        description: "check out new in Mens collection."  // Description of the section (empty in this case)
     }
 ];
